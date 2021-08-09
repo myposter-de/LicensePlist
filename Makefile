@@ -3,7 +3,7 @@ PREFIX?=/usr/local
 TEMPORARY_FOLDER=./tmp_portable_licenseplist
 
 build:
-	swift build --disable-sandbox -c release
+	/usr/bin/xcrun --sdk macosx swift build --disable-sandbox -c release
 
 test:
 	swift test
